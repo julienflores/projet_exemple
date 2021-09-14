@@ -1,0 +1,26 @@
+
+
+.hero{
+    height: 600px;
+    background-image: url('https://www.pexels.com/fr-fr/video/rouge-art-creatif-eau-7565634/');
+    background-size: cover;/*ajuste la largeur*/
+    background-position-y: center;/*ajuste verticalement*/
+
+}
+.hero-container{
+    width: 50%;
+    text-align: center;
+}
+.btn{
+    color: ;
+    border: none;
+    padding: 10px 20px;
+}
+.button-primary{
+    background-color: red;
+}
+.button-primary{
+    background-color: green;
+}
+
+
