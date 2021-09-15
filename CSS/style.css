@@ -1,26 +1,88 @@
+nav{
 
-
+}
+:root{
+        --prmary-color: rgb(0, 255, 13);
+        --danger-color: red;
+}
 .hero{
     height: 600px;
     background-image: url('https://www.pexels.com/fr-fr/video/rouge-art-creatif-eau-7565634/');
     background-size: cover;/*ajuste la largeur*/
     background-position-y: center;/*ajuste verticalement*/
-
 }
 .hero-container{
     width: 50%;
     text-align: center;
 }
+.btn:hover{
+    background-color: transparent;
+
+}
+.container{
+    margin: 50px 10px;
+}
+.container-fluid{
+margin: 50px 0px;
+}
+
 .btn{
     color: ;
     border: none;
     padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: 0.3s all;
 }
-.button-primary{
+.btn button-primary{
+    background-color: red; /*colorUI pour couleurs plus sympa*/
+}
+.btn button-secondary{
+    background-color: var(--danger-color);
+}
+.btn-primary:hover{
+    border: 1px solid var(--primary-color);
+}
+.btn-danger:hover{
+    border: 1px solid var(--danger-color);
+}
+.col{
+    width: calc(90%/4);
+    height: 300px; /*supprimer si on veut une hauteur AUTO*/
     background-color: red;
+    /*overflow: scroll;*/
 }
-.button-primary{
-    background-color: green;
+.col img{
+    width: 100%;
+}
+@media screen and (max-width:600px){
+    .col{
+        width: 100%;
+    }
+    .containe{
+        margin: 50px 0;
+    }
 }
 
-
+.col:nth-child(odd){  /*nthchild(numero) ou firstchild ou lastchild*/
+    background-color: violet;
+}
+.col:nth-child(even){
+    background-color: rgb(146, 130, 238);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-footer{
+    text-align: center;
+    padding: 10px;
+}
+.card-body{
+    padding: 20px;
+}
+.card{
+    border: 1px solid #aaa;
+    box-shadow: 10px 5px 10px rgba(0,0,0,20%);/*box-shadow : offset-x offset-y blur color;*/
+    border-radius: 3px;
+}
